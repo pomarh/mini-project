@@ -9,24 +9,32 @@
   </head>
   <body>
     <!-- inicio header   -->
-    <header class="bg-[linear-gradient(90deg,#1E293B _10%,#0D1117 _60%)]">
-      <nav>
-        <div>
-          <img src="" alt="">
-        </div>
-        <ul>
-          <li><a href="">About me</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Projects</a></li>
+    <header class="w-auto h-dvh bg-linear-[0deg,#294b8e_10%,#0a0f22_60%] relative">
+      <nav class="h-25 flex items-center text-white ">
+        <div class="flex-2 text-center">
+          <a href="#">D <span>W</span></a>
+        </div> 
+        <ul class="flex-auto flex justify-center gap-5">
+          <li><a class="hover:text-blue-300" href="">About me</a></li>
+          <li><a class="hover:text-blue-300" href="">Skills</a></li>
+          <li><a class="hover:text-blue-300" href="">Projects</a></li>
         </ul>
-        <div>
-          <a href="">Contact</a>
+        <div class="flex-2 text-center">
+          <a class="px-2 border rounded-2xl border-blue-300 hover:text-blue-300" href="#">Contact <span class="w-10 h-10 bg-amber-300 rounded-full "> / </span></a>
         </div>
       </nav>
-      <h1>i'm <span>Henry Poma Rojas</span> <span>frontend developer</span></h1>
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+      <h1 class="text-white">i'm <span>Henry Poma Rojas</span> <span>frontend developer</span></h1>
+      <img src="" alt="">
+      <article class="text-white w-70 h-30 bg-dark/50 p-5 rounded-2xl absolute bottom-70 left-[-10px] -rotate-6">
+        <h3 class="text-sm capitalize">Cliente review from Bolivia</h3>
+        <p class="text-[10px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, laborum!</p>
+      </article>
+      <article class="text-white w-70 h-30 bg-dark/50 py-5 text-center rounded-2xl absolute bottom-70 right-[-10px] rotate-6">
+        <h3 class="text-sm">MY ESPERTISE</h3>
+        <p class="text-[10px]">html -------- 50%</p>
+        <p class="text-[10px]">css ---------- 50%</p>
+        <p class="text-[10px]">javascript --- 20%</p>
+      </article>
       <button>My Projects</button>
     </header> 
     
