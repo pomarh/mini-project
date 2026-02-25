@@ -1,12 +1,12 @@
 const skills = [
-    { nombre: "html", photo: "img/html-icon.png", nivel: "junior" },
-    { nombre: "css", photo: "img/css-icon.png", nivel: "junior" },
-    { nombre: "javascript", photo: "img/javascript-programming-language-icon.png", nivel: "junior" },
-    { nombre: "react", photo: "img/react-js-icon.png", nivel: "junior" },
-    { nombre: "tailwindcss", photo: "img/tailwind-css-icon.png", nivel: "junior" },
-    { nombre: "vite", photo: "img/vite-dev-icon.png", nivel: "junior" },
-    { nombre: "node", photo: "img/node-js-icon.png", nivel: "junior" },
-    { nombre: "git", photo: "img/git-icon.png", nivel: "junior" },
+    { nombre: "html", photo: "./img/html-icon.png", nivel: "junior" },
+    { nombre: "css", photo: "./img/css-icon.png", nivel: "junior" },
+    { nombre: "javascript", photo: "./img/javascript-programming-language-icon.png", nivel: "junior" },
+    { nombre: "react", photo: "./img/react-js-icon.png", nivel: "junior" },
+    { nombre: "tailwindcss", photo: "./img/tailwind-css-icon.png", nivel: "junior" },
+    { nombre: "vite", photo: "./img/vite-dev-icon.png", nivel: "junior" },
+    { nombre: "node", photo: "./img/node-js-icon.png", nivel: "junior" },
+    { nombre: "git", photo: "./img/git-icon.png", nivel: "junior" },
   ];
 
 let skillsElement = document.querySelector("#mySkills")
@@ -24,9 +24,9 @@ function cargarSkills() {
 cargarSkills()
 
 const addSkills = [
-  {nombre: "github", photo: "img/github-icon.png", nivel: "junior" },
-  {nombre: "responsive", photo: "img/desktop-smartphone-transfer-icon.png", nivel: "junior" },
-  {nombre: "npm", photo: "img/npm-icon.png", nivel: "junior" }
+  {nombre: "github", photo: "./img/github-icon.png", nivel: "junior" },
+  {nombre: "responsive", photo: "./img/desktop-smartphone-transfer-icon.png", nivel: "junior" },
+  {nombre: "npm", photo: "./img/npm-icon.png", nivel: "junior" }
 ];
 
 let addSkillsElement = document.querySelector("#addSkills")
