@@ -25,17 +25,12 @@ const projectsInfo = [
     description: "QR code component" 
     },{ 
     nombre: "Great", 
-    photo: "../img/html-icon.png", 
+    photo: "../img/card 5.jpeg", 
     description: "3-column preview card component" 
     },
     { 
-    nombre: "Calculator", 
-    photo: "../img/html-icon.png", 
-    description: "Age calculator app" 
-    },
-    { 
     nombre: "Result", 
-    photo: "../img/html-icon.png", 
+    photo: "../img/card 4.jpeg", 
     description: "Tip calculator app" 
     },
 ]
@@ -51,7 +46,7 @@ function callProjects() {
         <img class="w-11/12 h-50 m-auto rounded-2xl" src="${projectsInfo[i].photo}" alt="">
         <p class="text-[16px] py-5">${projectsInfo[i].description}</p>
         <div class="">
-            <a href="#" class="px-5 py-1 text-[14px] text-dark font-semibold rounded-xl bg-highlight capitalize" alt="${projectsInfo[i].nombre}">link to git</a>
+            <a href="" class="px-5 py-1 text-[14px] text-dark font-semibold rounded-xl bg-highlight capitalize" alt="${projectsInfo[i].nombre}">link to git</a>
         </div>
         </div>
         `
