@@ -1,5 +1,5 @@
 const skills = [
-    { nombre: "html", photo: "./img/html-icon.png", nivel: "junior" },
+    { nombre: "html", photo: "img/html-icon.png", nivel: "junior" },
     { nombre: "css", photo: "img/css-icon.png", nivel: "junior" },
     { nombre: "javascript", photo: "img/javascript-programming-language-icon.png", nivel: "junior" },
     { nombre: "react", photo: "img/react-js-icon.png", nivel: "junior" },
