@@ -5,6 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="./js/habilidades.js" defer></script>
+    <script type="module" src="./js/validar.js" defer></script>
     <title>my-project</title>
   </head>
   <body class="font-sans">
@@ -14,21 +16,14 @@
         <div class="flex-1">
           <a href="index.html">D <span class="text-blue-900 font-extrabold">W</span></a>
         </div> 
-        <input type="checkbox" id="menu" class="hidden peer" />
-        <label for="menu" class="cursor-pointer md:hidden">
-          <div class="space-y-1">
-            <span class="block w-6 h-0.5 bg-white"></span>
-            <span class="block w-6 h-0.5 bg-white"></span>
-            <span class="block w-6 h-0.5 bg-white"></span>
-          </div>
-        </label>
-        <ul class="flex-auto flex justify-center gap-5 absolute left-0 top-16 w-full bg-slate-800 text-center
-        scale-y-0 origin-top transition-transform duration-300
-        peer-checked:scale-y-100
-        md:static md:flex md:scale-y-100 md:bg-transparent md:flex-1">
-          <li><a class="hover:text-blue-300" href="#aboutme">About me</a></li>
-          <li><a class="hover:text-blue-300" href="#skills">Skills</a></li>
-          <li><a class="hover:text-blue-300" href="#project">Projects</a></li>
+        <button id="buttomMenu" class="md:hidden">m</button>
+        <ul id="menu" class="flex flex-col gap-5 absolute left-0 top-16 w-full bg-slate-800 text-center mt-5 py-10
+        scale-y-0 opacity-0 origin-top transition-transform duration-600
+        md:static md:flex md:flex-row md:scale-y-100 md:opacity-100 md:bg-transparent md:flex-1">
+          <li><a class=" hover:text-blue-300" href="#project">Home</a></li>
+          <li><a class=" hover:text-blue-300" href="#aboutme">About me</a></li>
+          <li><a class=" hover:text-blue-300" href="#skills">Skills</a></li>
+          <li><a class=" hover:text-blue-300" href="./pages/proyectos.html">Projects</a></li>
         </ul>
         <div class="flex-1 justify-center items-center">
           <a class="px-2 border rounded-2xl border-blue-300 hover:text-blue-300" href="#contact">Contact <span class="rounded-full">↗️</span></a>
@@ -51,7 +46,7 @@
         <p class="text-[15px]">css ---------- 50%</p>
         <p class="text-[15px]">javascript --- 20%</p>
       </article>
-      <a class="w-5/6 mx-auto text-xl bg-highlight rounded-3xl py-1 px-10 hover:text-blue-800 md:absolute md:bottom-5 md:w-1/6 md:left-[43%]" href="#project">My Projects</a>
+      <a class="w-5/6 mx-auto text-xl bg-highlight rounded-3xl py-1 px-10 hover:text-blue-800 md:absolute md:bottom-5 md:w-1/6 md:left-[43%]" href="./pages/proyectos.html">My Projects</a>
     </header> 
     
     <!--  inicio main   -->
@@ -65,7 +60,7 @@
           <p class="text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut doloremque vitae tempore, iusto, neque deleniti necessitatibus est cupiditate nostrum voluptate maxime. Inventore mollitia adipisci nisi?</p>
           <p class="text-[16px]">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis numquam molestias quibusdam labore veniam adipisci voluptatem natus, temporibus expedita repellendus soluta dolor cupiditate similique doloribus?</p>
           <div class="text-center">
-            <a class="text-dark font-semibold text-xl capitalize bg-highlight rounded-4xl px-10 py-2 hover:text-blue-800" href="#project">show my proyects</a>
+            <a class="text-dark font-semibold text-xl capitalize bg-highlight rounded-4xl px-10 py-2 hover:text-blue-800" href="./pages/proyectos.html">show my proyects</a>
           </div>
         </div>
         <img src="" alt="">
@@ -76,33 +71,18 @@
       <!--  inicio my skills   -->
       <secction class="text-center" id="skills">
         <h2 class="py-10 text-5xl text-highlight font-simebold uppercase">My Skills</h2>
-          <div class="w-11/12 mx-auto grid grid-cols-2 gap-1 justify-center items-center md:grid-cols-6 md:w-3/4">
-            <div class="w-12/12 h-12/12 my-10 border border-dark rounded-xl bg-slate-800 flex justify-center items-center inset-shadow-sm inset-shadow-blue-900/50"><img class="w-1/2 h-1/2 mx-4" src="./img/html-icon.png" alt="icon html"></div>
-            <div class="w-12/12 h-12/12 my-10 border border-dark rounded-xl bg-slate-800 flex justify-center items-center inset-shadow-sm inset-shadow-blue-900/50"><img class="w-1/2 h-1/2 mx-4" src="./img/css-icon.png" alt="icon css"></div>
-            <div class="w-12/12 h-12/12 my-10 border border-dark rounded-xl bg-slate-800 flex justify-center items-center inset-shadow-sm inset-shadow-blue-900/50"><img class="w-1/2 h-1/2 mx-4" src="./img/javascript-programming-language-icon.png" alt="icon javascript"></div>
-            <div class="w-12/12 h-12/12 my-10 border border-dark rounded-xl bg-slate-800 flex justify-center items-center inset-shadow-sm inset-shadow-blue-900/50"><img class="w-1/2 h-1/2 mx-4" src="./img/react-js-icon.png" alt="icon react"></div>
-            <div class="w-12/12 h-12/12 my-10 border border-dark rounded-xl bg-slate-800 flex justify-center items-center inset-shadow-sm inset-shadow-blue-900/50"><img class="w-1/2 h-1/2 mx-4" src="./img/tailwind-css-icon.png" alt="icon tailwindcss"></div>
-            <div class="w-12/12 h-12/12 my-10 border border-dark rounded-xl bg-slate-800 flex justify-center items-center inset-shadow-sm inset-shadow-blue-900/50"><img class="w-1/2 h-1/2 mx-4" src="./img/vite-dev-icon.png" alt="icon vite"></div>
-            <div class="w-12/12 h-12/12 my-10 border border-dark rounded-xl bg-slate-800 flex justify-center items-center inset-shadow-sm inset-shadow-blue-900/50"><img class="w-1/2 h-1/2 mx-4" src="./img/node-js-icon.png" alt="icon nodejs"></div>
-            <div class="w-12/12 h-12/12 my-10 border border-dark rounded-xl bg-slate-800 flex justify-center items-center inset-shadow-sm inset-shadow-blue-900/50"><img class="w-1/2 h-1/2 mx-4" src="./img/git-icon.png" alt="icon git"></div>
-            <div class="py-10 border border-dark rounded-lg bg-slate-800 col-span-2 row-span-2 md:row-[1/3] md:col-[5/7] md:py-25">
-              <span class="text-7xl font-bold md:text-6xl">1</span>
+          <div id="mySkills" class="w-11/12 mx-auto grid grid-cols-2 gap-1 justify-center items-center md:grid-cols-6 md:w-3/4">
+            <!--skills desplegado por javascript-->
+            <div class="py-10 border border-dark rounded-lg bg-slate-800 col-span-2 row-span-2 md:row-[1/3] md:col-[5/7] md:py-35">
+              <span class="text-7xl font-bold md:text-9xl">1</span>
               <p class="text-2xl capitalize px-5 mb-5">Year experience working</p>
               <a class="w-5/6 text-xl text-dark bg-highlight rounded-4xl py-2 px-5 mt-5 hover:text-blue-800" href="./📄 CURRÍCULUM.pdf">Doundlader My CV</a>
             </div>
           </div>
         <div class="w-11/12 mx-auto bg-slate-800 mt-20 inset-shadow-sm inset-shadow-blue-900/50  md:w-3/4 md:px-30 md:rounded-xl">
           <h3 class="py-10 text-3xl text-highlight font-simebold uppercase">additionals skills</h3>
-          <div class="w-11/12 mx-auto grid grid-cols-2 gap-1 justify-center items-center pb-10 md:flex">
-            <div class="w-12/12 h-12/12 flex justify-center items-center">
-              <img class="w-1/2 h-3/4 md:w-30 md:h-30" src="./img/github-icon.png" alt="icon github">
-            </div>
-            <div class="w-12/12 h-12/12 flex justify-center items-center">
-              <img class="w-1/2 h-3/4 md:w-30 md:h-30" src="./img/desktop-smartphone-transfer-icon.png" alt="icon responsive">
-            </div>
-            <div class="w-12/12 h-12/12 flex justify-center items-center">
-              <img class="w-1/2 h-3/4 md:w-30 md:h-30" src="./img/npm-icon.png" alt="icon npm">
-            </div>
+          <div id="addSkills" class="w-11/12 mx-auto grid grid-cols-2 gap-2 justify-center items-center pb-10 md:flex">
+            <!--skills add desplegado por javascript-->
           </div>
         </div>
       </secction>
@@ -113,11 +93,11 @@
           <h2 class="w-11/12 text-4xl text-center my-10 font-semibold uppercase  md:text-6xl">the works closset to my heard</h2>
           <div class=" w-12/12 h-12/12 flex flex-col justify-center items-center gap-4 md:grid md:grid-cols-4">
             <img class="w-100 md:h-100 md:col-span-2 rounded-3xl" src="./img/card 1.jpg" alt="card 1">
-            <img class="md:h-100 rounded-3xl" src="./img/card 2.jpg" alt="card 2">
-            <img class="md:h-100 rounded-3xl" src="./img/card 3.jpg" alt="card 3">
+            <img class="md:h-100 rounded-3xl " src="./img/card 2.jpg" alt="card 2">
+            <img class="md:h-100 rounded-3xl " src="./img/card 3.jpg" alt="card 3">
           </div>
           <div class=" h-50 flex flex-col justify-center items-center gap-10 uppercase font-semibold md:absolute md:-bottom-10 md:left-1/5 md:w-5/6 md:grid md:grid-cols-2 md:text-center">
-            <a class=" w-12/12 text-dark text-xl bg-highlight rounded-4xl hover:text-blue-800 md:text-2xl px-5 py-3 md:px-15" href="#project">show my projects</a>
+            <a class=" w-12/12 text-dark text-xl bg-highlight rounded-4xl hover:text-blue-800 md:text-2xl px-5 py-3 md:px-15" href="./pages/proyectos.html">show my projects</a>
             <span class="text-xl -mt-10 md:text-1xl capitalize md:flex flex-col md:text-dark md:pr-120 md:mt-1"><span>plumbing</span> <span>company</span></spanclas>
           </div>
         </div>
@@ -126,12 +106,12 @@
       <!--  inicio contact   -->
       <section class="text-center" id="contact">
         <div class=" h-[80%] bg-light rounded-xl inset-shadow-sm pb-10 inset-shadow-blue-900/50 md:rounded-2xl md:w-230 md:mt-20">
-          <form  class="flex flex-col gap-2 md:gap-4" method="post">
+          <form id="formInfo" class="flex flex-col gap-2 md:gap-4" method="post">
             <h3 class="text-2xl text-dark text-center font-semibold uppercase my-5 md:my-10 md:text-7xl">let's have a chat</h3>
-            <input class="text-dark h-15 bg-neutral-200  mx-5 px-5 rounded-xl md:mx-20" type="text" placeholder="YOUR NAME">
-            <input class="text-dark h-15 bg-neutral-200  mx-5 px-5 rounded-xl md:mx-20" type="email" placeholder="EMAIL ADDRESS">
-            <textarea class="text-dark h-25 bg-neutral-200  mx-5 px-5 pt-5 rounded-xl md:mx-20" name="" id="" cols="30" rows="10" placeholder="CHAT HERE"></textarea>
-            <button class="w-[88%] h-15 text-dark font-semibold text-xl uppercase bg-highlight rounded-4xl py-2 hover:text-blue-800 md:mx20 mx-auto">submit here</button>
+            <input id="nameform" class="text-dark h-15 bg-neutral-200  mx-5 px-5 rounded-xl md:mx-20" type="text" placeholder="YOUR NAME">
+            <input id="emailForm" class="text-dark h-15 bg-neutral-200  mx-5 px-5 rounded-xl md:mx-20" type="email" placeholder="EMAIL ADDRESS">
+            <textarea id="textForm" class="text-dark h-25 bg-neutral-200  mx-5 px-5 pt-5 rounded-xl md:mx-20" cols="30" rows="10" placeholder="CHAT HERE"></textarea>
+            <button id="send" type="submit" class="w-[88%] h-15 text-dark font-semibold text-xl uppercase bg-highlight rounded-4xl py-2 hover:text-blue-800 md:mx20 mx-auto">submit here</button>
           </form>
         </div>
       </section>
