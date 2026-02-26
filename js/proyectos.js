@@ -11,26 +11,26 @@ buttomMenu.addEventListener("click", ()=> {
 const projectsInfo = [
     { 
     nombre: "Summary", 
-    photo: "../img/card 1.jpg", 
+    photo: "/img/card 1.jpg", 
     description: "Results summary component" 
     },
     { 
     nombre: "Blog", 
-    photo: "../img/card 2.jpg", 
+    photo: "/img/card 2.jpg", 
     description: "Blog preview card" 
     },
     { 
     nombre: "QR", 
-    photo: "../img/card 3.jpg", 
+    photo: "/img/card 3.jpg", 
     description: "QR code component" 
     },{ 
     nombre: "Great", 
-    photo: "../img/card 5.jpeg", 
+    photo: "/img/card 5.jpeg", 
     description: "3-column preview card component" 
     },
     { 
     nombre: "Result", 
-    photo: "../img/card 4.jpeg", 
+    photo: "/img/card 4.jpeg", 
     description: "Tip calculator app" 
     },
 ]
